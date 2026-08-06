@@ -30,7 +30,6 @@
       <span style="font-size: 15px; font-weight: 600; cursor: pointer; color: {{ navColors.about }};" onClick="{{ goAbout }}">{{ t.nav.about }}</span>
       <span style="font-size: 15px; font-weight: 600; cursor: pointer; color: {{ navColors.services }};" onClick="{{ goServices }}">{{ t.nav.services }}</span>
       <span style="font-size: 15px; font-weight: 600; cursor: pointer; color: {{ navColors.portfolio }};" onClick="{{ goPortfolio }}">{{ t.nav.portfolio }}</span>
-      <span style="font-size: 15px; font-weight: 600; cursor: pointer; color: {{ navColors.blog }};" onClick="{{ goBlog }}">{{ t.nav.blog }}</span>
       <span style="font-size: 15px; font-weight: 600; cursor: pointer; color: {{ navColors.contact }};" onClick="{{ goContact }}">{{ t.nav.contact }}</span>
     </nav>
     <div style="display: flex; align-items: center; gap: 18px; flex-shrink: 0;">
@@ -58,7 +57,7 @@
             <h1 style="font-size: 52px; line-height: 1.08; font-weight: 800; color: #0B1E3D; margin: 22px 0 20px; letter-spacing: -0.02em; text-wrap: pretty;">{{ t.hero.headline }}</h1>
             <p style="font-size: 18px; line-height: 1.6; color: #5B6B7A; max-width: 560px; margin: 0 0 32px; text-wrap: pretty;">{{ t.hero.sub }}</p>
             <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-              <a href="mailto:hola@danielgarcia.dev" style="padding: 14px 28px; background: #0B1E3D; color: #FFFFFF; font-size: 15px; font-weight: 700; border-radius: 8px;">{{ t.hero.ctaPrimary }}</a>
+              <a href="mailto:danielgarciadd.dg@gmail.com" style="padding: 14px 28px; background: #0B1E3D; color: #FFFFFF; font-size: 15px; font-weight: 700; border-radius: 8px;">{{ t.hero.ctaPrimary }}</a>
               <span style="padding: 14px 28px; border: 1.5px solid #0B1E3D; color: #0B1E3D; font-size: 15px; font-weight: 700; border-radius: 8px; cursor: pointer;" onClick="{{ goPortfolio }}">{{ t.hero.ctaSecondary }}</span>
             </div>
           </div>
@@ -112,7 +111,7 @@
           <div style="max-width: 780px; margin: 0 auto; text-align: center;">
             <h2 style="font-size: 30px; font-weight: 800; color: #FFFFFF; margin: 0 0 16px; letter-spacing: -0.01em;">{{ t.ctaBanner.title }}</h2>
             <p style="font-size: 16px; color: #C9D6E0; margin: 0 0 30px;">{{ t.ctaBanner.sub }}</p>
-            <a href="mailto:hola@danielgarcia.dev" style="padding: 14px 30px; background: #2E86AB; color: #FFFFFF; font-size: 15px; font-weight: 700; border-radius: 8px;">{{ t.ctaBanner.cta }}</a>
+            <a href="mailto:danielgarciadd.dg@gmail.com" style="padding: 14px 30px; background: #2E86AB; color: #FFFFFF; font-size: 15px; font-weight: 700; border-radius: 8px;">{{ t.ctaBanner.cta }}</a>
           </div>
         </section>
       </div>
@@ -190,7 +189,7 @@
                 </div>
                 <div style="display: flex; align-items: center; gap: 18px;">
                   <span style="font-size: 13.5px; font-weight: 700; color: #5B6B7A; background: #F4F6F8; padding: 8px 14px; border-radius: 8px;">{{ t.servicesPage.quote }}</span>
-                  <a href="mailto:hola@danielgarcia.dev" style="font-size: 14px; font-weight: 700; color: #2E86AB;">{{ t.servicesPage.ask }} →</a>
+                  <a href="mailto:danielgarciadd.dg@gmail.com" style="font-size: 14px; font-weight: 700; color: #2E86AB;">{{ t.servicesPage.ask }} →</a>
                 </div>
               </div>
             </div>
@@ -218,37 +217,14 @@
               <span style="display: inline-block; padding: 4px 10px; background: #EAF2F7; color: #2E86AB; font-size: 11.5px; font-weight: 700; border-radius: 6px; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.03em; align-self: flex-start;">{{ p.industry }}</span>
               <h3 style="font-size: 17px; font-weight: 700; color: #0B1E3D; margin: 0 0 10px; line-height: 1.35;">{{ p.title }}</h3>
               <p style="font-size: 13.5px; line-height: 1.55; color: #5B6B7A; margin: 0 0 18px; flex: 1;">{{ p.result }}</p>
-              <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+              <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px;">
                 <sc-for list="{{ p.tech }}" as="tc" hint-placeholder-count="3">
                   <span style="font-size: 11.5px; font-weight: 600; color: #5B6B7A; background: #F4F6F8; padding: 4px 9px; border-radius: 5px;">{{ tc }}</span>
                 </sc-for>
               </div>
-            </div>
-          </sc-for>
-        </div>
-      </div>
-    </sc-if>
-
-    <!-- ============ BLOG ============ -->
-    <sc-if value="{{ isBlog }}" hint-placeholder-val="{{ false }}">
-      <div data-screen-label="Blog" style="max-width: 900px; margin: 0 auto; padding: 72px 48px 100px;">
-        <div style="max-width: 640px; margin: 0 auto 48px; text-align: center;">
-          <span style="display: inline-block; padding: 6px 14px; background: #EAF2F7; color: #2E86AB; font-size: 13px; font-weight: 700; border-radius: 6px; margin-bottom: 16px;">{{ t.blogPage.eyebrow }}</span>
-          <h1 style="font-size: 36px; font-weight: 800; color: #0B1E3D; margin: 0 0 14px; letter-spacing: -0.01em;">{{ t.blogPage.title }}</h1>
-          <p style="font-size: 16px; color: #5B6B7A; margin: 0;">{{ t.blogPage.sub }}</p>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 20px;">
-          <sc-for list="{{ t.articles }}" as="art" hint-placeholder-count="6">
-            <div style="border: 1px solid #E2E8EE; border-radius: 12px; padding: 26px 28px; display: flex; justify-content: space-between; gap: 24px; align-items: center; cursor: pointer;" style-hover="border-color: #2E86AB;">
-              <div>
-                <span style="font-size: 11.5px; font-weight: 700; color: #2E86AB; text-transform: uppercase; letter-spacing: 0.03em;">{{ art.tag }}</span>
-                <h3 style="font-size: 18px; font-weight: 700; color: #0B1E3D; margin: 8px 0 8px;">{{ art.title }}</h3>
-                <p style="font-size: 14px; line-height: 1.55; color: #5B6B7A; margin: 0;">{{ art.excerpt }}</p>
-              </div>
-              <div style="text-align: right; flex-shrink: 0; min-width: 90px;">
-                <div style="font-size: 12.5px; color: #9AA7B3; font-weight: 600;">{{ art.date }}</div>
-                <div style="font-size: 12.5px; color: #9AA7B3; margin-top: 4px;">{{ art.read }}</div>
-              </div>
+              <sc-if value="{{ p.notebook }}">
+                <a href="{{ p.notebook }}" target="_blank" rel="noopener noreferrer" style="align-self: flex-start; font-size: 13px; font-weight: 700; color: #2E86AB; border: 1px solid #2E86AB; border-radius: 6px; padding: 5px 12px;">{{ t.common.viewNotebook }}</a>
+              </sc-if>
             </div>
           </sc-for>
         </div>
@@ -257,61 +233,31 @@
 
     <!-- ============ CONTACT ============ -->
     <sc-if value="{{ isContact }}" hint-placeholder-val="{{ false }}">
-      <div data-screen-label="Contacto" style="max-width: 1100px; margin: 0 auto; padding: 72px 48px 100px;">
-        <div style="text-align: center; max-width: 640px; margin: 0 auto 56px;">
+      <div data-screen-label="Contacto" style="max-width: 760px; margin: 0 auto; padding: 72px 48px 100px;">
+        <div style="text-align: center; margin: 0 auto 48px;">
           <span style="display: inline-block; padding: 6px 14px; background: #EAF2F7; color: #2E86AB; font-size: 13px; font-weight: 700; border-radius: 6px; margin-bottom: 16px;">{{ t.contactPage.eyebrow }}</span>
           <h1 style="font-size: 36px; font-weight: 800; color: #0B1E3D; margin: 0 0 14px; letter-spacing: -0.01em;">{{ t.contactPage.title }}</h1>
           <p style="font-size: 16px; color: #5B6B7A; margin: 0;">{{ t.contactPage.sub }}</p>
         </div>
-        <div style="display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px;">
-          <div style="border: 1px solid #E2E8EE; border-radius: 16px; padding: 36px;">
-            <sc-if value="{{ formSubmitted }}" hint-placeholder-val="{{ false }}">
-              <div style="text-align: center; padding: 40px 0;">
-                <div style="width: 56px; height: 56px; border-radius: 50%; background: #EAF2F7; color: #2E86AB; font-size: 26px; font-weight: 800; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">✓</div>
-                <h3 style="font-size: 20px; font-weight: 700; color: #0B1E3D; margin: 0 0 10px;">{{ t.contactPage.thanksTitle }}</h3>
-                <p style="font-size: 14.5px; color: #5B6B7A; margin: 0;">{{ t.contactPage.thanksSub }}</p>
-              </div>
-            </sc-if>
-            <sc-if value="{{ formNotSubmitted }}" hint-placeholder-val="{{ true }}">
-              <div style="display: flex; flex-direction: column; gap: 18px;">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px;">
-                  <div>
-                    <label style="font-size: 13px; font-weight: 700; color: #0B1E3D; display: block; margin-bottom: 8px;">{{ t.contactPage.name }}</label>
-                    <input type="text" value="{{ formData.name }}" onChange="{{ setName }}" style="width: 100%; box-sizing: border-box; padding: 12px 14px; border: 1px solid #E2E8EE; border-radius: 8px; font-size: 14px; font-family: inherit;"/>
-                  </div>
-                  <div>
-                    <label style="font-size: 13px; font-weight: 700; color: #0B1E3D; display: block; margin-bottom: 8px;">{{ t.contactPage.email }}</label>
-                    <input type="email" value="{{ formData.email }}" onChange="{{ setEmail }}" style="width: 100%; box-sizing: border-box; padding: 12px 14px; border: 1px solid #E2E8EE; border-radius: 8px; font-size: 14px; font-family: inherit;"/>
-                  </div>
-                </div>
-                <div>
-                  <label style="font-size: 13px; font-weight: 700; color: #0B1E3D; display: block; margin-bottom: 8px;">{{ t.contactPage.company }}</label>
-                  <input type="text" value="{{ formData.company }}" onChange="{{ setCompany }}" style="width: 100%; box-sizing: border-box; padding: 12px 14px; border: 1px solid #E2E8EE; border-radius: 8px; font-size: 14px; font-family: inherit;"/>
-                </div>
-                <div>
-                  <label style="font-size: 13px; font-weight: 700; color: #0B1E3D; display: block; margin-bottom: 8px;">{{ t.contactPage.message }}</label>
-                  <textarea rows="5" value="{{ formData.message }}" onChange="{{ setMessage }}" style="width: 100%; box-sizing: border-box; padding: 12px 14px; border: 1px solid #E2E8EE; border-radius: 8px; font-size: 14px; font-family: inherit; resize: vertical;"></textarea>
-                </div>
-                <span style="align-self: flex-start; padding: 13px 28px; background: #0B1E3D; color: #FFFFFF; font-size: 14.5px; font-weight: 700; border-radius: 8px; cursor: pointer;" onClick="{{ submitForm }}">{{ t.contactPage.send }}</span>
-              </div>
-            </sc-if>
+        <div style="background: #0B1E3D; border-radius: 16px; padding: 40px 48px; margin-bottom: 40px; text-align: center;">
+          <p style="font-size: 18px; line-height: 1.7; color: #C9D6E0; margin: 0 0 20px; font-style: italic; text-wrap: pretty;">{{ t.contactPage.quote }}</p>
+          <span style="font-size: 13px; font-weight: 700; color: #2E86AB; letter-spacing: 0.04em; text-transform: uppercase;">{{ t.contactPage.quoteAuthor }}</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <div style="border: 1px solid #E2E8EE; border-radius: 14px; padding: 26px;">
+            <div style="font-size: 12.5px; font-weight: 700; color: #2E86AB; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 8px;">Email</div>
+            <a href="mailto:danielgarciadd.dg@gmail.com" style="font-size: 15.5px; font-weight: 700; color: #0B1E3D;">danielgarciadd.dg@gmail.com</a>
           </div>
-          <div style="display: flex; flex-direction: column; gap: 16px;">
-            <div style="border: 1px solid #E2E8EE; border-radius: 14px; padding: 26px;">
-              <div style="font-size: 12.5px; font-weight: 700; color: #2E86AB; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 8px;">Email</div>
-              <a href="mailto:hola@danielgarcia.dev" style="font-size: 15.5px; font-weight: 700; color: #0B1E3D;">hola@danielgarcia.dev</a>
-            </div>
-            <div style="border: 1px solid #E2E8EE; border-radius: 14px; padding: 26px;">
-              <div style="font-size: 12.5px; font-weight: 700; color: #2E86AB; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 8px;">LinkedIn</div>
-              <a href="https://linkedin.com/in/danielgarcia" style="font-size: 15.5px; font-weight: 700; color: #0B1E3D;">linkedin.com/in/danielgarcia</a>
-            </div>
-            <div style="border: 1px solid #E2E8EE; border-radius: 14px; padding: 26px;">
-              <div style="font-size: 12.5px; font-weight: 700; color: #2E86AB; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 8px;">{{ t.contactPage.location }}</div>
-              <span style="font-size: 15.5px; font-weight: 700; color: #0B1E3D;">{{ t.contactPage.locationVal }}</span>
-            </div>
-            <div style="background: #F4F6F8; border-radius: 14px; padding: 26px;">
-              <span style="font-size: 14px; color: #374151; line-height: 1.6;">{{ t.contactPage.response }}</span>
-            </div>
+          <div style="border: 1px solid #E2E8EE; border-radius: 14px; padding: 26px;">
+            <div style="font-size: 12.5px; font-weight: 700; color: #2E86AB; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 8px;">LinkedIn</div>
+            <a href="https://linkedin.com/in/danielgarcia" style="font-size: 15.5px; font-weight: 700; color: #0B1E3D;">linkedin.com/in/danielgarcia</a>
+          </div>
+          <div style="border: 1px solid #E2E8EE; border-radius: 14px; padding: 26px;">
+            <div style="font-size: 12.5px; font-weight: 700; color: #2E86AB; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 8px;">{{ t.contactPage.location }}</div>
+            <span style="font-size: 15.5px; font-weight: 700; color: #0B1E3D;">{{ t.contactPage.locationVal }}</span>
+          </div>
+          <div style="background: #F4F6F8; border-radius: 14px; padding: 26px;">
+            <span style="font-size: 14px; color: #374151; line-height: 1.6;">{{ t.contactPage.response }}</span>
           </div>
         </div>
       </div>
@@ -331,13 +277,12 @@
         <div style="display: flex; flex-direction: column; gap: 10px;">
           <span style="font-size: 14px; color: #A9BBCB; cursor: pointer;" onClick="{{ goServices }}">{{ t.nav.services }}</span>
           <span style="font-size: 14px; color: #A9BBCB; cursor: pointer;" onClick="{{ goPortfolio }}">{{ t.nav.portfolio }}</span>
-          <span style="font-size: 14px; color: #A9BBCB; cursor: pointer;" onClick="{{ goBlog }}">{{ t.nav.blog }}</span>
         </div>
       </div>
       <div>
         <div style="font-size: 12.5px; font-weight: 700; color: #FFFFFF; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 16px;">{{ t.footer.contactTitle }}</div>
         <div style="display: flex; flex-direction: column; gap: 10px;">
-          <a href="mailto:hola@danielgarcia.dev" style="font-size: 14px; color: #A9BBCB;">hola@danielgarcia.dev</a>
+          <a href="mailto:danielgarciadd.dg@gmail.com" style="font-size: 14px; color: #A9BBCB;">danielgarciadd.dg@gmail.com</a>
           <a href="https://linkedin.com/in/danielgarcia" style="font-size: 14px; color: #A9BBCB;">LinkedIn</a>
         </div>
       </div>
@@ -351,182 +296,160 @@
 const NAVY = '#0B1E3D', ACCENT = '#2E86AB', MUTED = '#7C93A8', WHITE = '#FFFFFF', BG_ACTIVE = '#EAF2F7';
 
 const PROJECTS = [
-  { key: 'stoploss', industryKey: 'banca',
-    es: { title: 'Modelo de Stop Loss y Disparador de Pérdidas de Portafolio', result: 'Metodología para calcular umbrales de pérdida y generar alertas tempranas sobre el portafolio de inversiones, facilitando una gestión proactiva del riesgo de mercado.' },
-    en: { title: 'Portfolio Stop-Loss and Loss-Trigger Model', result: 'Designed a methodology to calculate loss thresholds and generate early-warning alerts on the investment portfolio, enabling proactive market-risk management.' },
-    tech: ['Python', 'SQL Server', 'Power BI', 'VaR'] },
-  { key: 'segmentacion', industryKey: 'banca',
-    es: { title: 'Segmentación de Clientes por Nivel de Volatilidad', result: 'Modelo de clustering para clasificar clientes según la estabilidad de sus depósitos, permitiendo gestión diferenciada del riesgo de liquidez y estrategias de retención.' },
-    en: { title: 'Customer Segmentation by Volatility Level', result: 'Clustering model to classify customers by deposit stability, enabling differentiated liquidity-risk management and retention strategies.' },
-    tech: ['Python', 'Scikit-Learn', 'GMM', 'K-Means'] },
-  { key: 'estabilidad', industryKey: 'banca',
-    es: { title: 'Modelo de Estabilidad de Depósitos', result: 'Metodología para identificar Operating Balance, Liquidity Buffer y Excess Liquidity, con reglas de negocio para evitar sesgos en clientes nuevos.' },
-    en: { title: 'Deposit Stability Model', result: 'Methodology to identify Operating Balance, Liquidity Buffer and Excess Liquidity, with business rules to avoid bias for newly onboarded customers.' },
+  { key: 'modelos-predictivos', industryKey: 'banca',
+    es: { title: 'Modelos Predictivos para Indicadores de Negocio', result: 'Modelos de clasificación, proyección y detección de desviaciones que permiten a organizaciones con grandes volúmenes de datos anticiparse a eventos y tomar decisiones basadas en evidencia.' },
+    en: { title: 'Predictive Models for Business Indicators', result: 'Classification, forecasting and anomaly-detection models that let data-rich organizations anticipate events and make evidence-based decisions.' },
     tech: ['Python', 'SQL', 'Power BI'] },
-  { key: 'lcr', industryKey: 'banca',
-    es: { title: 'Proyección del Ratio de Cobertura de Liquidez (LCR)', result: 'Modelo para proyectar el LCR usando información histórica de balance y flujos de efectivo, fortaleciendo la planificación y los ejercicios de estrés financiero.' },
-    en: { title: 'Liquidity Coverage Ratio (LCR) Projection', result: 'Model to project the LCR using historical balance-sheet and cash-flow data, strengthening financial planning and stress-testing exercises.' },
-    tech: ['Python', 'SQL', 'Power BI', 'Series de tiempo'] },
-  { key: 'dashboardriesgo', industryKey: 'banca',
-    es: { title: 'Dashboard Automatizado de Riesgo Financiero', result: 'Pipeline de datos automatizado para actualizar indicadores de riesgo de liquidez y mercado, reduciendo procesos manuales y mejorando la toma de decisiones.' },
-    en: { title: 'Automated Financial Risk Dashboard', result: 'Automated data pipeline updating liquidity and market risk indicators, cutting manual work and improving decision-making.' },
-    tech: ['Python', 'SQL Server', 'ETL', 'Parquet'] },
-  { key: 'mercado', industryKey: 'banca',
-    es: { title: 'Dashboard de Riesgo de Mercado', result: 'Tablero ejecutivo para monitorear VaR, DV01, duración de Macaulay, duración modificada y riesgo cambiario, con visión consolidada de la exposición del portafolio.' },
-    en: { title: 'Market Risk Dashboard', result: 'Executive dashboard monitoring VaR, DV01, Macaulay duration, modified duration and FX risk, giving a consolidated view of portfolio exposure.' },
-    tech: ['Power BI', 'Python', 'DAX'] },
+  { key: 'dashboards-ejecutivos', industryKey: 'banca',
+    es: { title: 'Dashboards Ejecutivos Automatizados', result: 'Tableros en producción que eliminan la actualización manual de indicadores, con pipelines de datos que alimentan las visualizaciones sin intervención del equipo analítico.' },
+    en: { title: 'Automated Executive Dashboards', result: 'Production dashboards that eliminate manual indicator updates, with data pipelines feeding visualizations without analyst intervention.' },
+    tech: ['Power BI', 'Python', 'SQL Server', 'DAX'] },
+  { key: 'pipelines-datos', industryKey: 'banca',
+    es: { title: 'Pipelines de Datos: Integración y Calidad', result: 'Procesos ETL que integran fuentes heterogéneas (SQL, Excel, Parquet, APIs), aseguran la calidad del dato y generan insumos confiables para modelos y reportes.' },
+    en: { title: 'Data Pipelines: Integration & Quality', result: 'ETL processes integrating heterogeneous sources (SQL, Excel, Parquet, APIs), ensuring data quality and producing reliable inputs for models and reports.' },
+    tech: ['Python', 'SQLAlchemy', 'SQL Server', 'Parquet'] },
+  { key: 'credit-scoring', industryKey: 'banca',
+    es: { title: 'Credit Scoring: Reject Inference y Scorecard', result: 'Modelo de scoring binario con regresión logística, WoE (Weight of Evidence) y VIF para selección de variables. Evaluado con KS, Gini y curva ROC. Proyecto de maestría.' },
+    en: { title: 'Credit Scoring: Reject Inference & Scorecard', result: 'Binary scoring model using logistic regression, WoE (Weight of Evidence) and VIF for variable selection. Evaluated with KS, Gini and ROC curve. Master\'s degree project.' },
+    tech: ['Python', 'WoE / IV', 'Optbinning', 'Scikit-Learn'],
+    notebook: 'https://github.com/DanielGB93/danielgb93.github.io/blob/main/credit_risk/german_credit_risk.ipynb' },
   { key: 'hotel1', industryKey: 'turismo',
     es: { title: 'Modelo Explicativo de Cancelación de Reservas Hoteleras', result: 'Modelo de regresión logística para identificar factores de cancelación, interpretando coeficientes mediante Odds Ratios y significancia estadística.' },
     en: { title: 'Explanatory Model for Hotel Booking Cancellations', result: 'Logistic regression model to identify cancellation drivers, interpreting coefficients via Odds Ratios and statistical significance.' },
-    tech: ['Python', 'Statsmodels', 'Regresión Logística'] },
+    tech: ['Python', 'Statsmodels', 'Regresión Logística'],
+    notebook: 'https://github.com/DanielGB93/danielgb93.github.io/blob/main/hotel_booking/hotel_booking.ipynb' },
   { key: 'hotel2', industryKey: 'turismo',
     es: { title: 'Modelo Predictivo de Cancelación de Reservas', result: 'Modelo de clasificación con validación cruzada y optimización de hiperparámetros para predecir cancelaciones y optimizar el umbral de decisión.' },
     en: { title: 'Predictive Model for Booking Cancellations', result: 'Classification model with cross-validation and hyperparameter tuning to predict cancellations and optimize the decision threshold.' },
-    tech: ['Python', 'Scikit-Learn', 'GridSearchCV'] },
+    tech: ['Python', 'Scikit-Learn', 'GridSearchCV'],
+    notebook: 'https://github.com/DanielGB93/danielgb93.github.io/blob/main/hotel_booking/hotel_booking.ipynb' },
   { key: 'cancer', industryKey: 'salud',
     es: { title: 'Modelo de Detección de Cáncer de Mama', result: 'Reducción de dimensionalidad con PCA y regresión logística para clasificar tumores benignos y malignos, con precisión cercana al 97%.' },
     en: { title: 'Breast Cancer Detection Model', result: 'Dimensionality reduction with PCA and logistic regression to classify benign vs. malignant tumors, reaching close to 97% accuracy.' },
     tech: ['Python', 'PCA', 'Scikit-Learn'] },
-  { key: 'etl', industryKey: 'banca',
-    es: { title: 'Automatización de Procesos ETL para Riesgos Financieros', result: 'Procesos automatizados para integrar información de SQL Server y archivos Parquet, mejorando calidad y trazabilidad de datos regulatorios.' },
-    en: { title: 'ETL Automation for Financial Risk', result: 'Automated processes integrating SQL Server and Parquet data, improving quality and traceability of data used in regulatory models.' },
-    tech: ['Python', 'SQLAlchemy', 'DuckDB'] },
+  { key: 'glucose', industryKey: 'salud',
+    es: { title: 'Tolerancia a la Glucosa y Envejecimiento: Análisis Estadístico', result: 'Análisis descriptivo e inferencial sobre la tolerancia a la glucosa en distintos grupos de edad, incluyendo pruebas de hipótesis para detectar diferencias entre grupos.' },
+    en: { title: 'Glucose Tolerance and Aging: Statistical Analysis', result: 'Descriptive and inferential analysis of glucose tolerance across age groups, including hypothesis tests to detect significant differences between groups.' },
+    tech: ['Python', 'SciPy', 'Statsmodels', 'Pandas'],
+    notebook: 'https://github.com/DanielGB93/danielgb93.github.io/blob/main/glucose_tolerance/Glucose_Tolerance.ipynb' },
   { key: 'supplychain', industryKey: 'manufactura',
     es: { title: 'Dashboards de BI para Planeación y Supply Chain', result: 'Dashboards para monitorear ventas, entregas y planificación, integrando múltiples áreas y automatizando indicadores clave.' },
     en: { title: 'BI Dashboards for Planning and Supply Chain', result: 'Dashboards to monitor sales, deliveries and planning, integrating multiple areas and automating key indicators.' },
     tech: ['Power BI', 'SQL', 'SAP IBP'] },
+  { key: 'champagne', industryKey: 'manufactura',
+    es: { title: 'Pronóstico de Ventas con Series de Tiempo', result: 'Exploración y comparación de modelos de series de tiempo — Prophet, ARIMA y variantes — aplicados a ventas mensuales de champagne, evaluados con RMSE.' },
+    en: { title: 'Sales Forecasting with Time Series', result: 'Exploration and comparison of time series models — Prophet, ARIMA and variants — applied to monthly champagne sales, evaluated with RMSE.' },
+    tech: ['Python', 'Prophet', 'ARIMA', 'Pandas'],
+    notebook: 'https://github.com/DanielGB93/danielgb93.github.io/blob/main/champagne_sales_analysis/champagne_sales_time_series.ipynb' },
   { key: 'b2b', industryKey: 'telecom',
     es: { title: 'Automatización de Reportes B2B', result: 'Automatización de la generación de reportes, reduciendo tiempos operativos y estandarizando la preparación de datos para clientes corporativos.' },
     en: { title: 'B2B Reporting Automation', result: 'Automated report generation, cutting operational time and standardizing data prep for corporate clients.' },
     tech: ['Excel', 'Power BI', 'SQL'] },
 ];
 
-const ARTICLES = {
-  es: [
-    { tag: 'Riesgo financiero', title: 'Cómo diseñar un modelo de Stop Loss para portafolios de inversión', excerpt: 'Metodología paso a paso para definir umbrales de pérdida y alertas tempranas.', date: '12 jun 2026', read: '7 min' },
-    { tag: 'Power BI', title: 'DAX avanzado: patrones de cálculo para dashboards ejecutivos', excerpt: 'Medidas reutilizables para reportes de gestión que realmente se usan.', date: '28 may 2026', read: '9 min' },
-    { tag: 'Machine Learning', title: 'Segmentación de clientes con Gaussian Mixture Models', excerpt: 'Cuándo preferir GMM sobre K-Means para segmentar carteras de clientes.', date: '15 may 2026', read: '6 min' },
-    { tag: 'Ingeniería de datos', title: 'ETL moderno: Python + DuckDB + Parquet sin servidores', excerpt: 'Un stack ligero para pipelines analíticos sin infraestructura pesada.', date: '30 abr 2026', read: '8 min' },
-    { tag: 'Riesgo financiero', title: 'Liquidity Coverage Ratio: cómo proyectarlo con series de tiempo', excerpt: 'Un enfoque práctico para anticipar el LCR en ejercicios de estrés.', date: '10 abr 2026', read: '10 min' },
-    { tag: 'Automatización', title: 'Power BI vs Excel: cuándo automatizar tus reportes', excerpt: 'Señales claras de que tu equipo necesita dejar de actualizar hojas a mano.', date: '22 mar 2026', read: '5 min' },
-  ],
-  en: [
-    { tag: 'Financial risk', title: 'How to design a stop-loss model for investment portfolios', excerpt: 'A step-by-step methodology to define loss thresholds and early alerts.', date: 'Jun 12, 2026', read: '7 min' },
-    { tag: 'Power BI', title: 'Advanced DAX: calculation patterns for executive dashboards', excerpt: 'Reusable measures for management reports people actually use.', date: 'May 28, 2026', read: '9 min' },
-    { tag: 'Machine Learning', title: 'Customer segmentation with Gaussian Mixture Models', excerpt: 'When to prefer GMM over K-Means for segmenting customer portfolios.', date: 'May 15, 2026', read: '6 min' },
-    { tag: 'Data engineering', title: 'Modern ETL: Python + DuckDB + Parquet, no servers', excerpt: 'A lightweight stack for analytics pipelines without heavy infrastructure.', date: 'Apr 30, 2026', read: '8 min' },
-    { tag: 'Financial risk', title: 'Liquidity Coverage Ratio: projecting it with time series', excerpt: 'A practical approach to anticipate the LCR in stress-testing exercises.', date: 'Apr 10, 2026', read: '10 min' },
-    { tag: 'Automation', title: 'Power BI vs. Excel: when to automate your reports', excerpt: 'Clear signs your team needs to stop updating spreadsheets by hand.', date: 'Mar 22, 2026', read: '5 min' },
-  ],
-};
 
 const I18N = {
   es: {
-    nav: { home: 'Inicio', about: 'Sobre mí', services: 'Servicios', portfolio: 'Portafolio', blog: 'Blog', contact: 'Contacto', cta: 'Contactar' },
-    common: { viewMore: 'Ver más', viewAll: 'Ver todo el portafolio' },
-    hero: { eyebrow: 'Data Scientist & Business Intelligence', headline: 'Convierto datos desordenados en decisiones claras.', sub: 'Diseño modelos de riesgo, dashboards ejecutivos y automatizaciones en Python para empresas de cualquier industria — con el mismo rigor que exige la banca.', ctaPrimary: 'Escríbeme', ctaSecondary: 'Ver portafolio' },
-    stats: [ { n: '12+', l: 'proyectos entregados' }, { n: '5', l: 'industrias distintas' }, { n: 'Top-5', l: 'banca de Centroamérica' }, { n: 'Python · SQL · Power BI', l: 'stack principal' } ],
+    nav: { home: 'Inicio', about: 'Sobre mí', services: 'Servicios', portfolio: 'Portafolio', contact: 'Contacto', cta: 'Contactar' },
+    common: { viewMore: 'Ver más', viewAll: 'Ver todo el portafolio', viewNotebook: 'Ver notebook →' },
+    hero: { eyebrow: 'Data Scientist & Business Intelligence', headline: 'Convierto datos desordenados en decisiones claras.', sub: 'Diseño modelos estadísticos, dashboards ejecutivos y automatizaciones en Python para cualquier industria — con el rigor que exige trabajar a escala en una de las organizaciones más grandes de Centroamérica.', ctaPrimary: 'Escríbeme', ctaSecondary: 'Ver portafolio' },
+    stats: [ { n: '30+', l: 'proyectos completados' }, { n: '5', l: 'industrias atendidas' }, { n: '6+', l: 'años de experiencia' }, { n: 'Python · SQL · Power BI', l: 'tecnologías clave' } ],
     homeServices: { title: 'Cómo puedo ayudarte', sub: 'Tres formas de convertir tus datos en resultados medibles.' },
     homeProjects: { title: 'Proyectos destacados' },
     ctaBanner: { title: '¿Listo para convertir tus datos en decisiones?', sub: 'Cuéntame el reto que enfrenta tu negocio y conversemos sin compromiso.', cta: 'Escríbeme ahora' },
     services: [
       { mono: 'BI', title: 'Dashboards en Power BI', short: 'Tableros ejecutivos con DAX avanzado, listos para tomar decisiones a diario.',
-        full: 'Diseño e implemento dashboards ejecutivos en Power BI, desde el modelo de datos hasta la experiencia visual, para que tu equipo tenga la información correcta en el momento correcto.',
-        bullets: ['Modelado de datos y relaciones', 'DAX avanzado y Deneb / Vega-Lite', 'Diseño UX del dashboard', 'Capacitación de uso al equipo'] },
+        full: 'Diseño e implemento dashboards ejecutivos en Power BI, desde el modelo de datos hasta la experiencia visual. El resultado: tu equipo tiene los indicadores correctos en tiempo real, sin actualización manual.',
+        bullets: ['Modelado de datos y relaciones', 'DAX avanzado y Deneb / Vega-Lite', 'Diseño UX del dashboard', 'Capacitación al equipo'] },
       { mono: 'PY', title: 'Automatización con Python', short: 'Elimino el trabajo manual repetitivo con scripts y pipelines confiables.',
-        full: 'Automatizo reportes, integraciones y flujos de datos con Python, reduciendo horas de trabajo manual y errores humanos en procesos recurrentes.',
+        full: 'Automatizo reportes, integraciones y flujos de datos con Python. El resultado: procesos que antes tomaban horas se ejecutan solos, con datos confiables y trazables.',
         bullets: ['Automatización de reportes', 'Integración de APIs, Excel y SQL', 'Pipelines ETL de extremo a extremo', 'Notificaciones y alertas automáticas'] },
       { mono: 'CAP', title: 'Capacitación corporativa', short: 'Formación práctica en Python, Power BI y Machine Learning para tu equipo.',
-        full: 'Capacito equipos analíticos con talleres a medida, enfocados en aplicar herramientas reales a los problemas del negocio, no solo teoría.',
+        full: 'Capacito equipos analíticos con talleres a medida, enfocados en aplicar herramientas reales a los problemas del negocio — no teoría desconectada del contexto.',
         bullets: ['Python para analistas', 'Power BI avanzado y DAX', 'SQL para análisis de datos', 'Machine Learning aplicado'] },
     ],
     about: {
       eyebrow: 'Sobre mí', name: 'Daniel García',
       bio: [
-        'Convierto datos desordenados en decisiones claras — con Python, SQL y Power BI, y desde cualquier industria.',
-        'Soy Científico de Datos con experiencia construyendo soluciones analíticas de principio a fin: desde la extracción y limpieza de datos hasta el modelo estadístico y el dashboard ejecutivo. He trabajado en servicios financieros, turismo, salud, manufactura y telecomunicaciones, lo que me da una visión transversal poco común: entiendo el negocio, no solo el código.',
-        'En mi rol actual diseño modelos cuantitativos y pipelines ETL automatizados para uno de los bancos más grandes de Centroamérica — eso me exige rigor metodológico, documentación sólida y soluciones que realmente se usen en producción. Ese mismo estándar lo aplico a cada proyecto freelance.',
+        'Soy Data Scientist con 6+ años convirtiendo datos desordenados en modelos, dashboards y automatizaciones que se usan en producción.',
+        'He trabajado en servicios financieros, turismo, salud, manufactura y telecomunicaciones. Eso me da una visión transversal poco común: entiendo el negocio, no solo el código. En mi rol actual diseño modelos estadísticos y pipelines ETL para una de las organizaciones más grandes de Centroamérica — lo que exige rigor metodológico, documentación sólida y soluciones que escalan. Ese mismo estándar lo aplico a cada proyecto freelance.',
+        'Actualmente curso una Maestría en Ciencia de Datos y Machine Learning en la Universidad Complutense de Madrid, donde he profundizado en modelamiento predictivo, bases de datos NoSQL, Snowflake y MLflow.',
       ],
       offerTitle: 'Lo que ofrezco',
       offers: [
         'Dashboards ejecutivos en Power BI (DAX avanzado, Deneb / Vega-Lite)',
         'Automatización de reportes y procesos con Python',
-        'Pipelines ETL: integración de SQL, Excel, APIs y CSV/Parquet',
-        'Modelos de Machine Learning: predicción, clasificación, forecasting',
+        'Pipelines ETL: integración de SQL, Excel, APIs y archivos planos',
+        'Modelos estadísticos y de Machine Learning: predicción, clasificación, forecasting',
         'Análisis estadístico y ciencia de datos end-to-end',
         'Capacitación corporativa en Python, Power BI y SQL',
       ],
       skillsTitle: 'Tecnologías dominadas',
     },
     servicesPage: { eyebrow: 'Servicios', title: 'Soluciones de datos con impacto medible', sub: 'Tres servicios centrales, adaptados al reto específico de tu negocio.', quote: 'Cotización a medida', ask: 'Solicitar propuesta' },
-    portfolioPage: { eyebrow: 'Portafolio', title: 'Proyectos reales, resultados concretos', sub: 'Una muestra del trabajo aplicado en banca, salud, turismo, manufactura y telecomunicaciones.' },
-    blogPage: { eyebrow: 'Blog', title: 'Artículos técnicos', sub: 'Notas sobre riesgo financiero, Power BI, Python y ciencia de datos aplicada.' },
+    portfolioPage: { eyebrow: 'Portafolio', title: 'Proyectos reales, resultados concretos', sub: 'Trabajo aplicado en servicios financieros, salud, turismo, manufactura y telecomunicaciones.' },
     contactPage: {
       eyebrow: 'Contacto', title: 'Hablemos de tu proyecto', sub: 'Cuéntame qué necesitas y te responderé en menos de 24 horas.',
-      name: 'Nombre', email: 'Email', company: 'Empresa', message: 'Mensaje', send: 'Enviar mensaje',
-      thanksTitle: '¡Gracias por escribir!', thanksSub: 'Recibí tu mensaje y te responderé en menos de 24 horas.',
-      location: 'Ubicación', locationVal: 'Centroamérica · Remoto', response: 'Respondo en menos de 24 horas. Si prefieres, escríbeme directo a mi correo o LinkedIn.',
+      quote: '"Sin datos, solo eres otra persona con una opinión."',
+      quoteAuthor: '— W. Edwards Deming',
+      location: 'Ubicación', locationVal: 'Tegucigalpa, Honduras · Remoto', response: 'Respondo en menos de 24 horas. Si prefieres, escríbeme directo a mi correo o LinkedIn.',
     },
-    industries: { banca: 'Banca / Riesgo', turismo: 'Turismo', salud: 'Salud', manufactura: 'Manufactura', telecom: 'Telecom', all: 'Todos' },
-    footer: { tagline: 'Ciencia de datos y Business Intelligence para empresas que quieren decidir con evidencia.', linksTitle: 'Navegación', contactTitle: 'Contacto', copyright: '© 2026 Daniel García. Todos los derechos reservados.' },
-    articles: ARTICLES.es,
+    industries: { banca: 'Servicios Financieros', turismo: 'Turismo', salud: 'Salud', manufactura: 'Manufactura', telecom: 'Telecom', all: 'Todos' },
+    footer: { tagline: 'Ciencia de datos y Business Intelligence para organizaciones que quieren decidir con evidencia.', linksTitle: 'Navegación', contactTitle: 'Contacto', copyright: '© 2026 Daniel García. Todos los derechos reservados.' },
   },
   en: {
-    nav: { home: 'Home', about: 'About', services: 'Services', portfolio: 'Portfolio', blog: 'Blog', contact: 'Contact', cta: 'Contact' },
-    common: { viewMore: 'Learn more', viewAll: 'View full portfolio' },
-    hero: { eyebrow: 'Data Scientist & Business Intelligence', headline: 'I turn messy data into clear decisions.', sub: 'I build risk models, executive dashboards and Python automations for companies in any industry — with the same rigor banking demands.', ctaPrimary: 'Email me', ctaSecondary: 'View portfolio' },
-    stats: [ { n: '12+', l: 'projects delivered' }, { n: '5', l: 'industries served' }, { n: 'Top-5', l: 'Central American bank' }, { n: 'Python · SQL · Power BI', l: 'core stack' } ],
+    nav: { home: 'Home', about: 'About', services: 'Services', portfolio: 'Portfolio', contact: 'Contact', cta: 'Contact' },
+    common: { viewMore: 'Learn more', viewAll: 'View full portfolio', viewNotebook: 'View notebook →' },
+    hero: { eyebrow: 'Data Scientist & Business Intelligence', headline: 'I turn messy data into clear decisions.', sub: 'I build statistical models, executive dashboards and Python automations for any industry — with the rigor of working at scale inside one of Central America\'s largest organizations.', ctaPrimary: 'Email me', ctaSecondary: 'View portfolio' },
+    stats: [ { n: '30+', l: 'projects completed' }, { n: '5', l: 'industries served' }, { n: '6+', l: 'years of experience' }, { n: 'Python · SQL · Power BI', l: 'core technologies' } ],
     homeServices: { title: 'How I can help', sub: 'Three ways to turn your data into measurable results.' },
     homeProjects: { title: 'Featured projects' },
     ctaBanner: { title: 'Ready to turn your data into decisions?', sub: 'Tell me about the challenge your business is facing — no strings attached.', cta: 'Email me now' },
     services: [
       { mono: 'BI', title: 'Power BI dashboards', short: 'Executive dashboards with advanced DAX, ready for daily decisions.',
-        full: 'I design and build executive dashboards in Power BI, from data modeling to visual experience, so your team has the right information at the right time.',
-        bullets: ['Data modeling and relationships', 'Advanced DAX and Deneb / Vega-Lite', 'Dashboard UX design', 'Team training on usage'] },
+        full: 'I design and build executive dashboards in Power BI, from data modeling to visual experience. The outcome: your team has the right indicators in real time, with no manual updates.',
+        bullets: ['Data modeling and relationships', 'Advanced DAX and Deneb / Vega-Lite', 'Dashboard UX design', 'Team training'] },
       { mono: 'PY', title: 'Python automation', short: 'I remove repetitive manual work with reliable scripts and pipelines.',
-        full: 'I automate reports, integrations and data flows with Python, cutting manual hours and human error out of recurring processes.',
+        full: 'I automate reports, integrations and data flows with Python. The outcome: processes that used to take hours run on their own, with reliable and traceable data.',
         bullets: ['Report automation', 'API, Excel and SQL integration', 'End-to-end ETL pipelines', 'Automated notifications and alerts'] },
       { mono: 'ED', title: 'Corporate training', short: 'Hands-on training in Python, Power BI and Machine Learning for your team.',
-        full: 'I train analytics teams with tailored workshops focused on applying real tools to business problems, not just theory.',
+        full: 'I train analytics teams with tailored workshops focused on applying real tools to business problems — not theory disconnected from context.',
         bullets: ['Python for analysts', 'Advanced Power BI and DAX', 'SQL for data analysis', 'Applied Machine Learning'] },
     ],
     about: {
       eyebrow: 'About me', name: 'Daniel García',
       bio: [
-        'I turn messy data into clear decisions — with Python, SQL and Power BI, in any industry.',
-        'I am a Data Scientist experienced in building end-to-end analytics solutions: from data extraction and cleaning to statistical modeling and executive dashboards. I have worked across financial services, tourism, healthcare, manufacturing and telecom, giving me a rare cross-industry view: I understand the business, not just the code.',
-        'In my current role I design quantitative models and automated ETL pipelines for one of the largest banks in Central America — that demands methodological rigor, solid documentation and solutions that actually run in production. I hold every freelance project to that same standard.',
+        'I am a Data Scientist with 6+ years turning messy data into models, dashboards and automations that run in production.',
+        'I have worked across financial services, tourism, healthcare, manufacturing and telecom — giving me a cross-industry perspective that is uncommon: I understand the business, not just the code. In my current role I design statistical models and ETL pipelines for one of Central America\'s largest organizations, which demands methodological rigor, solid documentation and solutions that scale. I hold every freelance project to that same standard.',
+        'I am currently completing a Master\'s in Data Science and Machine Learning at Universidad Complutense de Madrid, where I have deepened my expertise in predictive modeling, NoSQL databases, Snowflake and MLflow.',
       ],
       offerTitle: 'What I offer',
       offers: [
         'Executive Power BI dashboards (advanced DAX, Deneb / Vega-Lite)',
         'Report and process automation with Python',
-        'ETL pipelines: SQL, Excel, APIs and CSV/Parquet integration',
-        'Machine Learning models: prediction, classification, forecasting',
+        'ETL pipelines: SQL, Excel, APIs and flat-file integration',
+        'Statistical and Machine Learning models: prediction, classification, forecasting',
         'End-to-end statistical analysis and data science',
         'Corporate training in Python, Power BI and SQL',
       ],
       skillsTitle: 'Technologies',
     },
     servicesPage: { eyebrow: 'Services', title: 'Data solutions with measurable impact', sub: 'Three core services, tailored to your business challenge.', quote: 'Custom quote', ask: 'Request a proposal' },
-    portfolioPage: { eyebrow: 'Portfolio', title: 'Real projects, concrete results', sub: 'A sample of applied work in banking, healthcare, tourism, manufacturing and telecom.' },
-    blogPage: { eyebrow: 'Blog', title: 'Technical articles', sub: 'Notes on financial risk, Power BI, Python and applied data science.' },
+    portfolioPage: { eyebrow: 'Portfolio', title: 'Real projects, concrete results', sub: 'Applied work in financial services, healthcare, tourism, manufacturing and telecom.' },
     contactPage: {
       eyebrow: 'Contact', title: "Let's talk about your project", sub: "Tell me what you need and I'll reply within 24 hours.",
-      name: 'Name', email: 'Email', company: 'Company', message: 'Message', send: 'Send message',
-      thanksTitle: 'Thanks for reaching out!', thanksSub: "I've received your message and will reply within 24 hours.",
-      location: 'Location', locationVal: 'Central America · Remote', response: "I reply within 24 hours. You're also welcome to email or message me on LinkedIn directly.",
+      quote: '"Without data, you\'re just another person with an opinion."',
+      quoteAuthor: '— W. Edwards Deming',
+      location: 'Location', locationVal: 'Tegucigalpa, Honduras · Remote', response: "I reply within 24 hours. You're also welcome to email or message me on LinkedIn directly.",
     },
-    industries: { banca: 'Banking / Risk', turismo: 'Tourism', salud: 'Healthcare', manufactura: 'Manufacturing', telecom: 'Telecom', all: 'All' },
-    footer: { tagline: 'Data science and Business Intelligence for companies that want to decide with evidence.', linksTitle: 'Navigation', contactTitle: 'Contact', copyright: '© 2026 Daniel García. All rights reserved.' },
-    articles: ARTICLES.en,
+    industries: { banca: 'Financial Services', turismo: 'Tourism', salud: 'Healthcare', manufactura: 'Manufacturing', telecom: 'Telecom', all: 'All' },
+    footer: { tagline: 'Data science and Business Intelligence for organizations that want to decide with evidence.', linksTitle: 'Navigation', contactTitle: 'Contact', copyright: '© 2026 Daniel García. All rights reserved.' },
   },
 };
 
 class Component extends DCLogic {
   state = {
-    page: 'home', lang: 'es', filter: 'all', formSubmitted: false,
-    formData: { name: '', email: '', company: '', message: '' },
+    page: 'home', lang: 'es', filter: 'all',
   };
 
   navColor(key) { return this.state.page === key ? ACCENT : NAVY; }
@@ -543,6 +466,7 @@ class Component extends DCLogic {
       title: p[lang].title,
       result: p[lang].result,
       tech: p.tech,
+      notebook: p.notebook || '',
     }));
 
     const industryOrder = ['banca', 'turismo', 'salud', 'manufactura', 'telecom'];
@@ -562,26 +486,24 @@ class Component extends DCLogic {
     const filteredProjects = this.state.filter === 'all' ? projects : projects.filter(p => p.industryKey === this.state.filter);
 
     const skillGroups = lang === 'es' ? [
-      { name: 'Lenguajes', items: ['Python', 'SQL Server', 'DAX'] },
-      { name: 'Ciencia de datos', items: ['Scikit-Learn', 'Statsmodels', 'Pandas', 'NumPy', 'PCA', 'GMM', 'K-Means'] },
-      { name: 'Business Intelligence', items: ['Power BI', 'Power Query', 'DAX', 'Plotly', 'Deneb'] },
-      { name: 'Ingeniería de datos', items: ['ETL', 'SQLAlchemy', 'DuckDB', 'Parquet'] },
-      { name: 'Analítica financiera', items: ['LCR', 'VaR / CVaR', 'DV01', 'Duración de Macaulay'] },
+      { name: 'Lenguajes', items: ['Python', 'SQL', 'NoSQL', 'DAX'] },
+      { name: 'Business Intelligence', items: ['Power BI', 'Power Query', 'DAX', 'Plotly', 'Deneb', 'Tableau'] },
+      { name: 'Ingeniería de datos', items: ['ETL', 'Snowflake', 'MongoDB'] },
+      { name: 'Modelamiento cuantitativo', items: ['Series de tiempo', 'Forecasting', 'Análisis de escenarios', 'Optimización'] },
     ] : [
-      { name: 'Languages', items: ['Python', 'SQL Server', 'DAX'] },
-      { name: 'Data science', items: ['Scikit-Learn', 'Statsmodels', 'Pandas', 'NumPy', 'PCA', 'GMM', 'K-Means'] },
-      { name: 'Business Intelligence', items: ['Power BI', 'Power Query', 'DAX', 'Plotly', 'Deneb'] },
-      { name: 'Data engineering', items: ['ETL', 'SQLAlchemy', 'DuckDB', 'Parquet'] },
-      { name: 'Financial analytics', items: ['LCR', 'VaR / CVaR', 'DV01', 'Macaulay duration'] },
+      { name: 'Languages', items: ['Python', 'SQL', 'NoSQL', 'DAX'] },
+      { name: 'Business Intelligence', items: ['Power BI', 'Power Query', 'DAX', 'Plotly', 'Deneb', 'Tableau'] },
+      { name: 'Data engineering', items: ['ETL', 'Snowflake', 'MongoDB'] },
+      { name: 'Quantitative modeling', items: ['Time series', 'Forecasting', 'Scenario analysis', 'Optimization'] },
     ];
 
     return {
       t, lang,
       isHome: page === 'home', isAbout: page === 'about', isServices: page === 'services',
-      isPortfolio: page === 'portfolio', isBlog: page === 'blog', isContact: page === 'contact',
+      isPortfolio: page === 'portfolio', isContact: page === 'contact',
       navColors: {
         home: this.navColor('home'), about: this.navColor('about'), services: this.navColor('services'),
-        portfolio: this.navColor('portfolio'), blog: this.navColor('blog'), contact: this.navColor('contact'),
+        portfolio: this.navColor('portfolio'), contact: this.navColor('contact'),
       },
       langBg: { es: lang === 'es' ? NAVY : '#FFFFFF', en: lang === 'en' ? NAVY : '#FFFFFF' },
       langColor: { es: lang === 'es' ? '#FFFFFF' : '#5B6B7A', en: lang === 'en' ? '#FFFFFF' : '#5B6B7A' },
@@ -589,7 +511,6 @@ class Component extends DCLogic {
       goAbout: () => this.setState({ page: 'about' }),
       goServices: () => this.setState({ page: 'services' }),
       goPortfolio: () => this.setState({ page: 'portfolio' }),
-      goBlog: () => this.setState({ page: 'blog' }),
       goContact: () => this.setState({ page: 'contact' }),
       setLangEs: () => this.setState({ lang: 'es' }),
       setLangEn: () => this.setState({ lang: 'en' }),
@@ -597,14 +518,6 @@ class Component extends DCLogic {
       filteredProjects,
       filterOptions,
       skillGroups,
-      formSubmitted: this.state.formSubmitted,
-      formNotSubmitted: !this.state.formSubmitted,
-      formData: this.state.formData,
-      setName: e => this.setState({ formData: { ...this.state.formData, name: e.target.value } }),
-      setEmail: e => this.setState({ formData: { ...this.state.formData, email: e.target.value } }),
-      setCompany: e => this.setState({ formData: { ...this.state.formData, company: e.target.value } }),
-      setMessage: e => this.setState({ formData: { ...this.state.formData, message: e.target.value } }),
-      submitForm: () => this.setState({ formSubmitted: true }),
     };
   }
 }
